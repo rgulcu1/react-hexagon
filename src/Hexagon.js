@@ -90,7 +90,7 @@ function Hexagon(props) {
   const polyStyle = defaults({
     fill: props.backgroundImage ? `url(#${bgId})` : 'none',
     stroke: '#42873f',
-    strokeWidth: props.diagonal * 0.02,
+    strokeWidth: props.borderWidth,
     cursor: props.onClick && 'pointer'
   }, props.style)
 
